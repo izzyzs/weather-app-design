@@ -1,0 +1,54 @@
+:root {
+    --my-green: #00ce71;
+    --my-blue: #0097ce;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: var(--my-green);
+    display: grid;
+    grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end col4-start] 1fr [col4-end col5-start] 1fr [col5-end];
+    grid-template-rows: [row1-start] max(30px, 10vh) [row1-end row2-start] min(300px, 40vh) [row2-end row3-start] 50vh [row3-end];
+    gap: 10px;
+}
+
+.container > div {
+    background-color: var(--my-blue);
+    text-align: center;
+    border: 1px black solid;
+    padding: 1vh 0;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+/* 
+.item-1 {
+    grid-area: ;
+}
+.item-2 {
+    grid-area: ;
+}
+.item-3 {
+    grid-area: ;
+}
+.item-4 {
+    grid-area: ;
+}
+.item-5 {
+    grid-area: ;
+}
+.item-6 {
+    grid-area: ;
+}
+.item-7 {
+    grid-area: ;
+}
+.item-8 {
+    grid-area: ;
+}
+.item-9 {
+    grid-area: ;
+}
+.item-10 {
+} */

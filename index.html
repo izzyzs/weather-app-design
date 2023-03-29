@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Raleway+Dots&family=Raleway:ital,wght@0,100;0,400;0,500;0,700;0,800;1,200;1,400;1,500;1,700;1,800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 class="title">Weather App</h1>
+        <form class="city-search" action="/by-city" method="post">
+            <input type="text" placeholder="Enter City" />
+            <button type="submit">Submit</button>
+        </form>
+        <div class="grid">
+            <h2 id="day">___</h2>
+            <p class="special long-date" id="longDate">Month DD, YYYY</p>
+            <img class="weather-img" src="https://openweathermap.org/img/wn/01n@2x.png" alt="clear night" />
+            <p class="special sky-description">Clear Sky</p>
+            <p class="temp-description">temp: 55.4</p>
+            <p class="description">feels_like: 52.29</p>
+            <p class="description">temp_min: 50.88</p>
+            <p class="description">pressure: 1014</p>
+            <p class="description">sea_level: 1014</p>
+            <p class="description">grnd_level: 1012</p>
+            <p class="description">humidity: 35</p>
+            <p class="description">temp_kf: 2.51</p>
+            <p class="description">clouds.all: 4</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
